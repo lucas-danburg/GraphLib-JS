@@ -26,15 +26,11 @@ export class Interface {
         if(this.Graph instanceof Field) {
             this.states.mouse = this.states.field
 
-            this.mouse = {
-                x: 10,
-                y: 10
-            }
-            this.mouse.x = 200
-            this.mouse.y = 200
+            this.mouse = {}
             this.arrow = false
 
             this.integration = false
+            this.integrations = []
 
             this.Graph.canvas.addEventListener('mousemove', (event) => {
                 this.stop = false
@@ -219,7 +215,6 @@ export class Interface {
          */
         integration: (graph, axis, time, lambda, config = this.config, repeat = false) => {
             this.integration = true
-            if(!this.integrations) { this.integrations = [] }
             this.integrations.push({
                 graph: graph,
                 axis: axis,
