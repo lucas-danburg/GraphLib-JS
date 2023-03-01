@@ -1,5 +1,6 @@
 import { Config } from './Config.js'
 import { Vector } from './Vector.js'
+import { Field } from './Field.js'
 import { units } from './ops.js'
 import { Integration } from './Integration.js'
 
@@ -22,14 +23,18 @@ export class Interface {
             axes: this.Graph.states.axes
         }
 
-        if(this.Graph.constructor.name == 'Field') {
+        if(this.Graph instanceof Field) {
             this.states.mouse = this.states.field
 
-            this.mouse = {}
+            this.mouse = {
+                x: 10,
+                y: 10
+            }
+            this.mouse.x = 200
+            this.mouse.y = 200
             this.arrow = false
 
             this.integration = false
-            this.integrations = []
 
             this.Graph.canvas.addEventListener('mousemove', (event) => {
                 this.stop = false
@@ -137,7 +142,7 @@ export class Interface {
         lambdas: () => {
             this.Graph.context.putImageData(this.states.axes, 0, 0)
             
-            if(this.Graph.constructor.name == 'Field') {
+            if(this.Graph instanceof Field) {
                 this.Graph.vectors.forEach((vector) => {
                     vector.calculate()
                     this.Graph.vector(vector)
@@ -214,6 +219,7 @@ export class Interface {
          */
         integration: (graph, axis, time, lambda, config = this.config, repeat = false) => {
             this.integration = true
+            if(!this.integrations) { this.integrations = [] }
             this.integrations.push({
                 graph: graph,
                 axis: axis,
