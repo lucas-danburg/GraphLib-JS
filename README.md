@@ -15,7 +15,7 @@ A JavaScript web graphics library for graphing dynamical systems.
 
 Add
 ```
-<script src = "https://cdn.jsdelivr.net/npm/library-dynamica@1.0.0/dist/main.js"></script>
+<script src = "https://cdn.jsdelivr.net/npm/library-dynamica/dist/main.js"></script>
 ```
 to the `<head>` of an HTML page, and you will have access to a
 `libdyn` object in any script you use throughout the page. That
