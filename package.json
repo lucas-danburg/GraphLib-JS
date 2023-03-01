@@ -1,6 +1,6 @@
 {
   "name": "library-dynamica",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/main.js",
   "directories": {
     "lib": "lib"
@@ -9,10 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["graph", "webgl", "canvas", "webgraphics", "math", "dynamical", "browser"],
+  "author": "Lucas Danburg <lidanburg@icloud.com>",
+  "license": "MIT",
+  "description": "A JavaScript web graphics library for graphing dynamical systems.",
   "devDependencies": {
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
