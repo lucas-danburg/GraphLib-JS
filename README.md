@@ -37,4 +37,4 @@ might have. Check out [my website](coming soon) and inspect the page source for 
 
 - [Github](https://github.com/lucas-danburg/library-dynamica)
 - [NPM](https://www.npmjs.com/package/library-dynamica?activeTab=readme)
-- [Examples](https://lucasdanb.org/rnd/liddyn.html)
+- [Examples](https://lucasdanb.org/rnd/libdyn.html)
