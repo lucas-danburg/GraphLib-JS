@@ -31,7 +31,7 @@ in a node application as well, but I've never tried.
 Unfortunately, the best I can give you is some JSDoc comments.
 If you happen to come across this repo and want to use it,
 feel free to contact me and I can answer any questions you
-might have. Check out [my website](coming soon) and inspect the page source for some code examples.
+might have. Check out [my website](https://lucasdanb.org/rnd/libdyn.html) and inspect the page source for some code examples.
 
 ## Links
 
